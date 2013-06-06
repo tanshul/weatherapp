@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nadraki Weather</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script src="ratchet.js"></script> 
+    <link rel="stylesheet" href="css/climacons-font.css" />   
+    <link rel="stylesheet" href="css/ratchet.css" />   
+    <link rel="stylesheet" href="css/custom.css" />   
+  
+    </head>
+    <body>
+   <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar-title">
+        <h1 class="title">Weather Forecast</h1>
+    </header>
+
+    <nav class="bar-tab">
+      <ul class="tab-inner">
+        <li class="tab-item active">
+          <a href="western.html" data-transition="fade"> 
+             <div class="tab-label">Western</div>
+          </a>
+        </li>
+        <li class="tab-item">
+          <a href="central.html" data-transition="fade"> 
+             <div class="tab-label">Central</div>
+          </a>
+        </li>
+        <li class="tab-item">
+          <a href="northen.html" data-transition="fade"> 
+             <div class="tab-label">Northen</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+        <div class="content-padded">
+            <p class="welcome">Forecast for Western, 27th March 2013</p>
+        </div>
+        <div id="tabContent"></div>         
+    </div>
+
+    <script src="config.js"></script> 
+    <script>
+      getWeather("Western");
+    </script> 
+
+    </body>
+</html>
+

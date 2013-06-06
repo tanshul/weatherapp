@@ -1,0 +1,29 @@
+.glyph {
+float: left;
+text-align: left;
+clear:both;
+width:100%;
+}
+#tabContent_Western .glyph{
+  background: #f8e258;	
+}
+#tabContent_Central .glyph{
+  background: #4b97cb;	
+}
+#tabContent_Northern .glyph{
+  background: #6cc08e;	
+}
+.fs1 {
+font-size: 64px;
+color:#fff; 
+padding: 20px 10px 20px 10px;
+float:right;
+}    
+.descr{
+float:left;
+ color:#fff;
+width:60%;
+padding: 20px 10px 20px 10px;
+font: 14px/1.25 "Helvetica Neue", sans-serif;
+}
+ 
